@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alibay - İlan ekleme</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="top-header bg-gray py-2">
+		<div class="container d-flex justify-content-between align-items-center">
+			<div class="top-header__left d-flex">
+				<div class="d-flex align-items-center me-5" >
+					<div style="width: 1.4375rem;" class="me-2"><img class="img-fluid"
+							src="img/home/top-header-icon-1.png" alt=""></div>
+					<select class="form-select f-s" aria-label="Default select example" style="background-color: transparent; border: none;">
+						<option selected>Bölgəni seçin</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+
+				<div class="d-flex align-items-center">
+					<div class="me-2" style="width: 2.8125rem;">
+						<img class="img-fluid" src="img/home/top-header-icon-2.png" alt="">
+					</div>
+					<div style="min-width: 80px;">Dil seçin:</div>
+					<select class="form-select" aria-label="Default select example" style="background-color: transparent; border: none;">
+						<option selected>Azərbaycan</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+			</div>
+			<div class="">
+				<a href="">İstək siyahısı</a>
+			</div>
+		</div>
+	</div>
+
+	<header id="header">
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<!-- -fluid mx-5 -->
+				<a class="navbar-brand" href="#" style="display: inline-block; width: 6.5625rem;">
+					<img src="img/home/header-logo.svg" alt="" class="img-fluid">
+				</a>
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<span class="me-2" style="display: inline-block; height: 2rem;">
+						<img class="" src="img/home/header-icon-1.png" alt="" style="height: 100%;">
+					</span>
+					Kategoriyalar
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content mc-1">
+							<div class="modal-body">
+								<div class="d-flex justify-content-between">
+									<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+										aria-orientation="vertical">
+										<button class="nav-link active" id="v-pills-əmlak-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-əmlak" type="button" role="tab"
+											aria-controls="v-pills-əmlak" aria-selected="true">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-1.png" alt=""></div>
+												Daşınmaz əmlak
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-səxsi-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-səxsi" type="button" role="tab"
+											aria-controls="v-pills-səxsi" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"> <img style="height: 100%;"
+														src="img/img-2.png" alt=""></div>
+												Şəxsi əşyalar
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-nəqliyyat-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-nəqliyyat" type="button" role="tab"
+											aria-controls="v-pills-nəqliyyat" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-3.png" alt=""></div>
+												Nəqliyyat
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-kisi-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-kisi" type="button" role="tab"
+											aria-controls="v-pills-kisi" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-4.png" alt=""></div>
+												Kişi bölümü
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-qadın-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-qadın" type="button" role="tab"
+											aria-controls="v-pills-qadın" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-4.png" alt=""></div>
+												Qadın bölümü
+											</div>
+										</button>
+									</div>
+									<div class="tab-content" style="flex-grow: 2;" id="v-pills-tabContent">
+										<div style="height: 100%;" class="tab-pane fade show active" id="v-pills-əmlak"
+											role="tabpanel" aria-labelledby="v-pills-əmlak-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-səxsi"
+											role="tabpanel" aria-labelledby="v-pills-səxsi-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 2</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-nəqliyyat"
+											role="tabpanel" aria-labelledby="v-pills-nəqliyyat-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 3</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-kisi"
+											role="tabpanel" aria-labelledby="v-pills-kisi-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 4</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-qadın"
+											role="tabpanel" aria-labelledby="v-pills-qadın-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 5</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+								<button type="button" class="btn btn-blue">Kaydet</button>
+							</div>
+						</div>
+						<div class="modal-content mc-2" style="display: none;">
+							<div class="modal-body">
+								<nav>
+									<div class="nav nav-tabs" id="nav-tab" role="tablist">
+										<button class="nav-link active" id="nav-əmlak-tab" data-bs-toggle="tab"										data-bs-target="#nav-əmlak" type="button" role="tab"
+											aria-controls="nav-əmlak" aria-selected="true">
+											Daşınmaz əmlak
+										</button>
+										<button class="nav-link" id="nav-səxsi-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-səxsi" type="button" role="tab"
+											aria-controls="nav-səxsi" aria-selected="false">
+											Şəxsi əşyalar
+										</button>
+										<button class="nav-link" id="nav-nəqliyyat-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-nəqliyyat" type="button" role="tab"
+											aria-controls="nav-nəqliyyat" aria-selected="false">
+											Nəqliyyat
+										</button>
+										<button class="nav-link" id="nav-kisi-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-kisi" type="button" role="tab"
+											aria-controls="nav-kisi" aria-selected="false">
+											Kişi bölümü
+										</button>
+										<button class="nav-link" id="nav-qadın-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-qadın" type="button" role="tab"
+											aria-controls="nav-qadın" aria-selected="false">
+											Qadın bölümü
+										</button>
+									</div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="nav-əmlak" role="tabpanel"
+										aria-labelledby="nav-əmlak-tab">
+									<table class="table w-100 table-bordered mb-0"
+										style="background-color: #E2E2E2; height: 100%;">
+										<thead>
+											<tr class="table-row">
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									<div class="tab-pane fade" id="nav-səxsi" role="tabpanel"
+										aria-labelledby="nav-səxsi-tab">
+									<table class="table w-100 table-bordered mb-0"
+										style="background-color: #E2E2E2; height: 100%;">
+										<thead>
+											<tr class="table-row">
+												<th scope="col"><a href="#">Lorem 2</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									<div class="tab-pane fade" id="nav-nəqliyyat" role="tabpanel"
+										aria-labelledby="nav-nəqliyyat-tab">
+									<table class="table w-100 table-bordered mb-0"
+										style="background-color: #E2E2E2; height: 100%;">
+										<thead>
+											<tr class="table-row">
+												<th scope="col"><a href="#">Lorem 3</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									<div class="tab-pane fade" id="nav-kisi" role="tabpanel"
+										aria-labelledby="nav-kisi-tab">
+									<table class="table w-100 table-bordered mb-0"
+										style="background-color: #E2E2E2; height: 100%;">
+										<thead>
+											<tr class="table-row">
+												<th scope="col"><a href="#">Lorem 4</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									<div class="tab-pane fade" id="nav-qadın" role="tabpanel"
+										aria-labelledby="nav-qadın-tab">
+									<table class="table w-100 table-bordered mb-0"
+										style="background-color: #E2E2E2; height: 100%;">
+										<thead>
+											<tr class="table-row">
+												<th scope="col"><a href="#">Lorem 5</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+												<th scope="col"><a href="#">Lorem ipsum</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+											<tr class="table-row">
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+								<button type="button" class="btn btn-blue">Kaydet</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<form class="d-flex order-xxl-0 order-1 flex-shrink-0">
+					<input class="form-control" type="search" placeholder="Nə axtarırsınız?" aria-label="Search">
+					<button class="btn btn-blue d-flex" type="submit" style="position: relative; right: 10px;">
+						<span class="me-3" style="display: inline-block; width: 1.3rem;"><img class="img-fluid"
+								src="img/home/header-icon-2.png" alt=""></span>
+						Axtar
+					</button>
+				</form>
+				<ul class="navbar-nav mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
+					<!-- me-auto -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span class="" style="display: inline-block; width: 4.5rem;"><img class="img-fluid"
+									src="img/home/header-icon-3.png" alt=""></span>
+							<span class="d-none  d-xxl-inline-block">Sevimlilərim</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span class="" style="display: inline-block; width: 4.5rem;"><img class="img-fluid"
+									src="img/home/header-icon-4.png" alt=""></span>
+							<span class="d-none  d-xxl-inline-block">Hesabım</span>
+						</a>
+					</li>
+				</ul>
+				<button type="button" class="btn btn-pink me-3">
+					<span style="display: inline-block; height: 2.5rem;">
+						<img src="img/home/header-icon-5.png" alt="" style="height: 100%;">
+					</span>
+					<span class="d-none  d-xxl-inline-block">Elan Yerləşdir</span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 openClose-1">
+					<div class="d-flex flex-column">
+						<a href="#" class="w-100 rounded my-4"><img class="img-fluid" src="img/home/reklam-3.png"
+								alt=""></a>
+						<form action="#" class="w-100 bg-white p-4 rounded shadow-sm">
+							<h4 class="mb-3 fw-bold">Bizə zəng edin</h4>
+							<p class="fw-bold">Əlaqə Saxlamağınızın Səbəbi Nədir?</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+								<label class="form-check-label" for="flexCheckDefault1">
+									Seçim 1
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+								<label class="form-check-label" for="flexCheckDefault2">
+									Seçim 2
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+								<label class="form-check-label" for="flexCheckDefault3">
+									Seçim 3
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+								<label class="form-check-label" for="flexCheckDefault4">
+									Seçim 4
+								</label>
+							</p>
+							<p><a href="#" class="text-blue">
+									Digər
+									<img class="me-5" src="img/home/arrow-down.png" alt="">
+								</a></p>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Yaz</label>
+								<div class="form-floating">
+									<textarea class="form-control" placeholder="Leave a comment here"></textarea>
+								</div>
+							</div>
+							<button type="button" class="btn btn-pink w-100">
+								<span class="me-2" style="display: inline-block; width: 2rem;">
+									<img class="img-fluid" src="img/category-adverb/icon-phone-alt.png" alt="">
+								</span>
+								Bizə zəng edin
+							</button>
+						</form>
+						<a href="#" class="w-100 rounded my-4"><img class="img-fluid"
+								src="img/category-adverb/reklam-1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col-lg-9 col-md-12">
+
+
+					<div class="add-an-ad mt-4">
+						<div class="row">
+							<h3 class="fw-bold mb-2">Kateqoriya Seçin</h3>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100">
+										<img class="img-fluid w-100" src="img/home/category-1.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center">Daşınmaz əmlak</p>
+								</a>
+							</div>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100" style="width: 250px;">
+										<img class="img-fluid w-100" src="img/home/category-2.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center"> Nəqliyyat</p>
+								</a>
+							</div>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100" style="width: 250px;">
+										<img class="img-fluid w-100" src="img/home/category-3.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center">Elektronika</p>
+								</a>
+							</div>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100" style="width: 250px;">
+										<img class="img-fluid w-100" src="img/home/category-4.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center"> Qadın bölümü</p>
+								</a>
+							</div>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100" style="width: 250px;">
+										<img class="img-fluid w-100" src="img/home/category-5.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center"> Kişi bölümü</p>
+								</a>
+							</div>
+							<div class="col-lg-4 col-4 rounded">
+								<a href="#" class="category__item">
+									<div class="rounded w-100" style="width: 250px;">
+										<img class="img-fluid w-100" src="img/home/category-6.png" alt="">
+									</div>
+									<p class="fw-bold mt-2 text-center">Körpə və Uşaq</p>
+								</a>
+							</div>
+						</div>
+						<div class="row my-5">
+							<h3 class="fw-bold mb-2">Şəkil Yüklə</h3>
+							<div class="card bg-gray2 p-5 mb-3 border-0">
+								<div class="card-body d-flex flex-column align-items-center">
+									<div style="width: 5rem;"><img class="img-fluid" src="img/add-an-ad/add-icon.png"
+											alt=""></div>
+									<span class="card-text py-4">Elanınıza 5 şəkil yükləyə bilərsiniz.</span>
+									<a href="#" class="btn btn-blue">Fayl seçin</a>
+								</div>
+							</div>
+							<form class="row g-3">
+								<div class="col-6" style="position: relative;">
+									<label for="validationDefault01" class="form-label fw-bold fs-5">Qiymət</label>
+									<span class="currency-unit text-blue fw-bold">AZN</span>
+									<input type="text" class="form-control" id="validationDefault01"
+										value="Qiyməti daxil edin" required>
+								</div>
+								<div class="col-6">
+									<label for="validationDefault02" class="form-label fw-bold fs-5">Məhsulun
+										Adı</label>
+									<input type="text" class="form-control" id="validationDefault02"
+										value="Məhsulun adını daxil edin" required>
+								</div>
+								<div class="col-12">
+									<label for="floatingTextarea2" class="form-label fw-bold fs-5">Təsvir</label>
+									<textarea class="form-control" placeholder="" id="floatingTextarea2"
+										style="height: 100px"></textarea>
+								</div>
+								<div class="col-md-6">
+									<label for="validationDefault01" class="form-label fw-bold fs-5">Reng</label>
+									<select class="form-select" id="validationDefault01" required>
+										<option selected disabled value="">Mor</option>
+										<option>Mavi</option>
+										<option>Kırmızı</option>
+										<option>Sarı</option>
+										<option>Turuncu</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="validationDefault02" class="form-label fw-bold fs-5">Yeni?</label>
+									<select class="form-select" id="validationDefault02" required>
+										<option selected disabled value="">Yeni</option>
+										<option>Mavi</option>
+										<option>Kırmızı</option>
+										<option>Sarı</option>
+										<option>Turuncu</option>
+									</select>
+								</div>
+								<div class="col-12 text-center">
+									<button class="btn btn-blue px-5 py-2 my-4" type="submit">Təsdiq Edin</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="py-5">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="footer__item col-lg-3 col-sm-6">
+					<h4 class="mb-3 fw-bold">Haqqımızda</h4>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6">
+					<h4 class="mb-3 fw-bold">Sosial Mediya</h4>
+					<p>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/instagram.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/twitter.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/facebook.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/linkedin-in.png" alt=""></a>
+					</p>
+					<p class="fw-bold fs-5 ">Bizimlə əlaqə saxlayın</p>
+					<p>+994 050 555 55 55</p>
+					<p>+994 050 555 55 55</p>
+					<p class="my-2">info@alibay.com</p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6">
+					<h4 class="mb-3 fw-bold">Lorem Ipsum</h4>
+					<p>Lorem Ipsum</p>
+					<p>Lorem Ipsum</p>
+					<p class="me-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem sed doloribus
+						architecto cupiditate perferendis ipsa recusandae in explicabo odio officiis?</p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6">
+					<h4 class="mb-3 fw-bold">Proqramımızı yükləyin</h4>
+					<div class="dowload">
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/app_store.png" alt="">
+						</a>
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/google-play.png" alt="">
+						</a>
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/huawei.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center fw-bold">Bütün hüquqlar alibay tərəfindən qorunur</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap.js"></script>
+</body>
+</html>

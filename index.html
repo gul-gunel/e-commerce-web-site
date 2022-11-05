@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alibay</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="top-header bg-gray py-2">
+		<div class="container d-flex justify-content-between align-items-center">
+			<div class="top-header__left d-flex">
+				<div class="d-flex align-items-center me-5" >
+					<div style="width: 1.4375rem;" class="me-2"><img class="img-fluid"
+							src="img/home/top-header-icon-1.png" alt=""></div>
+					<select class="form-select f-s" aria-label="Default select example" style="background-color: transparent; border: none;">
+						<option selected>Bölgəni seçin</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+
+				<div class="d-flex align-items-center">
+					<div class="me-2" style="width: 2.8125rem;">
+						<img class="img-fluid" src="img/home/top-header-icon-2.png" alt="">
+					</div>
+					<div style="min-width: 80px;">Dil seçin:</div>
+					<select class="form-select" aria-label="Default select example" style="background-color: transparent; border: none;">
+						<option selected>Azərbaycan</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+			</div>
+			<div class="">
+				<a href="">İstək siyahısı</a>
+			</div>
+		</div>
+	</div>
+
+	<header id="header">
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<!-- -fluid mx-5 -->
+				<a class="navbar-brand" href="#" style="display: inline-block; width: 6.5625rem;">
+					<img src="img/home/header-logo.svg" alt="" class="img-fluid">
+				</a>
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<span class="me-2" style="display: inline-block; height: 2rem;">
+						<img class="" src="img/home/header-icon-1.png" alt="" style="height: 100%;">
+					</span>
+					Kategoriyalar
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content mc-1">
+							<div class="modal-body">
+								<div class="d-flex justify-content-between">
+									<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+										aria-orientation="vertical">
+										<button class="nav-link active" id="v-pills-əmlak-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-əmlak" type="button" role="tab"
+											aria-controls="v-pills-əmlak" aria-selected="true">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-1.png" alt=""></div>
+												Daşınmaz əmlak
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-səxsi-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-səxsi" type="button" role="tab"
+											aria-controls="v-pills-səxsi" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"> <img style="height: 100%;"
+														src="img/img-2.png" alt=""></div>
+												Şəxsi əşyalar
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-nəqliyyat-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-nəqliyyat" type="button" role="tab"
+											aria-controls="v-pills-nəqliyyat" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-3.png" alt=""></div>
+												Nəqliyyat
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-kisi-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-kisi" type="button" role="tab"
+											aria-controls="v-pills-kisi" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-4.png" alt=""></div>
+												Kişi bölümü
+											</div>
+										</button>
+										<button class="nav-link" id="v-pills-qadın-tab" data-bs-toggle="pill"
+											data-bs-target="#v-pills-qadın" type="button" role="tab"
+											aria-controls="v-pills-qadın" aria-selected="false">
+											<div class="d-flex align-items-center justify-content-between">
+												<div style="height: 6.07rem;"><img style="height: 100%;"
+														src="img/img-4.png" alt=""></div>
+												Qadın bölümü
+											</div>
+										</button>
+									</div>
+									<div class="tab-content" style="flex-grow: 2;" id="v-pills-tabContent">
+										<div style="height: 100%;" class="tab-pane fade show active" id="v-pills-əmlak"
+											role="tabpanel" aria-labelledby="v-pills-əmlak-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-səxsi"
+											role="tabpanel" aria-labelledby="v-pills-səxsi-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 2</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-nəqliyyat"
+											role="tabpanel" aria-labelledby="v-pills-nəqliyyat-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 3</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-kisi"
+											role="tabpanel" aria-labelledby="v-pills-kisi-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 4</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div style="height: 100%;" class="tab-pane fade" id="v-pills-qadın"
+											role="tabpanel" aria-labelledby="v-pills-qadın-tab">
+											<div class="d-flex align-items-center justify-content-between"
+												style="height: 100%;">
+												<table class="table w-100 table-bordered mb-0"
+													style="background-color: #E2E2E2; height: 100%;">
+													<thead>
+														<tr class="table-row">
+															<th scope="col"><a href="#">Lorem 5</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+															<th scope="col"><a href="#">Lorem ipsum</a></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+														<tr class="table-row">
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+															<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<div class="category-img-container" style="width: 26rem;">
+													<img class="img-fluid" src="img/big-img-1.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+								<button type="button" class="btn btn-blue">Kaydet</button>
+							</div>
+						</div>
+						<div class="modal-content mc-2" style="display: none;">
+							<div class="modal-body">
+								<nav>
+									<div class="nav nav-tabs" id="nav-tab" role="tablist">
+										<button class="nav-link active" id="nav-əmlak-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-əmlak" type="button" role="tab"
+											aria-controls="nav-əmlak" aria-selected="true">
+											Daşınmaz əmlak
+										</button>
+										<button class="nav-link" id="nav-səxsi-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-səxsi" type="button" role="tab"
+											aria-controls="nav-səxsi" aria-selected="false">
+											Şəxsi əşyalar
+										</button>
+										<button class="nav-link" id="nav-nəqliyyat-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-nəqliyyat" type="button" role="tab"
+											aria-controls="nav-nəqliyyat" aria-selected="false">
+											Nəqliyyat
+										</button>
+										<button class="nav-link" id="nav-kisi-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-kisi" type="button" role="tab" aria-controls="nav-kisi"
+											aria-selected="false">
+											Kişi bölümü
+										</button>
+										<button class="nav-link" id="nav-qadın-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-qadın" type="button" role="tab"
+											aria-controls="nav-qadın" aria-selected="false">
+											Qadın bölümü
+										</button>
+									</div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="nav-əmlak" role="tabpanel"
+										aria-labelledby="nav-əmlak-tab">
+										<table class="table w-100 table-bordered mb-0"
+											style="background-color: #E2E2E2; height: 100%;">
+											<thead>
+												<tr class="table-row">
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="nav-səxsi" role="tabpanel"
+										aria-labelledby="nav-səxsi-tab">
+										<table class="table w-100 table-bordered mb-0"
+											style="background-color: #E2E2E2; height: 100%;">
+											<thead>
+												<tr class="table-row">
+													<th scope="col"><a href="#">Lorem 2</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="nav-nəqliyyat" role="tabpanel"
+										aria-labelledby="nav-nəqliyyat-tab">
+										<table class="table w-100 table-bordered mb-0"
+											style="background-color: #E2E2E2; height: 100%;">
+											<thead>
+												<tr class="table-row">
+													<th scope="col"><a href="#">Lorem 3</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="nav-kisi" role="tabpanel"
+										aria-labelledby="nav-kisi-tab">
+										<table class="table w-100 table-bordered mb-0"
+											style="background-color: #E2E2E2; height: 100%;">
+											<thead>
+												<tr class="table-row">
+													<th scope="col"><a href="#">Lorem 4</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="tab-pane fade" id="nav-qadın" role="tabpanel"
+										aria-labelledby="nav-qadın-tab">
+										<table class="table w-100 table-bordered mb-0"
+											style="background-color: #E2E2E2; height: 100%;">
+											<thead>
+												<tr class="table-row">
+													<th scope="col"><a href="#">Lorem 5</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+													<th scope="col"><a href="#">Lorem ipsum</a></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+												<tr class="table-row">
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+													<td class="fw-bold"><a href="#">Lorem ipsum</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+								<button type="button" class="btn btn-blue">Kaydet</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<form class="d-flex order-xxl-0 order-1 flex-shrink-0">
+					<input class="form-control" type="search" placeholder="Nə axtarırsınız?" aria-label="Search">
+					<button class="btn btn-blue d-flex" type="submit" style="position: relative; right: 10px;">
+						<span class="me-3" style="display: inline-block; width: 1.3rem;"><img class="img-fluid"
+								src="img/home/header-icon-2.png" alt=""></span>
+						Axtar
+					</button>
+				</form>
+				<ul class="navbar-nav mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
+					<!-- me-auto -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span class="" style="display: inline-block; width: 4.5rem;"><img class="img-fluid"
+									src="img/home/header-icon-3.png" alt=""></span>
+							<span class="d-none  d-xxl-inline-block">Sevimlilərim</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<span class="" style="display: inline-block; width: 4.5rem;"><img class="img-fluid"
+									src="img/home/header-icon-4.png" alt=""></span>
+							<span class="d-none  d-xxl-inline-block">Hesabım</span>
+						</a>
+					</li>
+				</ul>
+				<button type="button" class="btn btn-pink me-3">
+					<span style="display: inline-block; height: 2.5rem;">
+						<img src="img/home/header-icon-5.png" alt="" style="height: 100%;">
+					</span>
+					<span class="d-none  d-xxl-inline-block">Elan Yerləşdir</span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<section class="sec1 mt-nav mb-3 fw-bold">
+		<div class="container d-flex" style="overflow-x: auto;">
+			<a href="#" class="pe-5">Daşınmaz əmlak</a>
+			<a href="#" class="pe-5">Nəqliyyat</a>
+			<a href="#" class="pe-5">Elektronika</a>
+			<a href="#" class="pe-5">Qadın bölümü</a>
+			<a href="#" class="pe-5">Kişi bölümü</a>
+			<a href="#" class="pe-5">Uşaq bölümü</a>
+			<a href="#" class="pe-5">İdman</a>
+			<a href="#" class="pe-5">Mebellər</a>
+		</div>
+	</section>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 openClose-1">
+					<div class="d-flex flex-column">
+						<a href="#" class="w-100 my-4 rounded"><img class="img-fluid" src="img/home/reklam-1.svg"
+								alt=""></a>
+						<a href="#" class="w-100 rounded"><img class="img-fluid" src="img/home/reklam-2.png" alt=""></a>
+						<a href="#" class="w-100 my-4 rounded"><img class="img-fluid" src="img/home/reklam-3.png"
+								alt=""></a>
+						<form action="#" class="rounded w-100 bg-white p-4 shadow-sm">
+							<h4 class="mb-3 fw-bold">Filtrləmə</h4>
+							<p class="fw-bold">Plitələr seçərək süzün</p>
+							<p class="fw-bold">Sənə Nə Lazımdır?</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+								<label class="form-check-label" for="flexCheckDefault1">
+									Seçim 1
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+								<label class="form-check-label" for="flexCheckDefault2">
+									Seçim 2
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+								<label class="form-check-label" for="flexCheckDefault3">
+									Seçim 3
+								</label>
+							</p>
+							<p>
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+								<label class="form-check-label" for="flexCheckDefault4">
+									Seçim 4
+								</label>
+							</p>
+							<p><a href="#" class="text--blue">
+									Daha Çox
+									<img class="me-5" src="img/home/arrow-down.png" alt="">
+								</a></p>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Qiymət Aralığı</label>
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput2" class="form-label">Lorem Ipsum</label>
+								<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+							</div>
+							<button type="button" class="btn btn-pink px-5">Axtar</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-lg-9 col-md-12">
+
+					<div id="carouselExampleCaptions" class="carousel slide mt-4" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner rounded">
+							<div class="carousel-item active">
+								<img src="img/home/slide-img-1.svg" class="d-block w-100" alt="...">
+								<div
+									class="carousel-caption d-flex justify-content-between align-items-start text-dark">
+									<div>
+										<h5 class="fs-1 fw-bold">Reklam Sahəsi</h5>
+										<p class="fs-3">Kampanyalı Ürün</p>
+									</div>
+									<div>
+										<p class="align-self-end fs-2 mobil-color">
+											<span class="fs-144 fw-bold text-pink">10</span>
+											<span class="fs-1 fw-bold text-pink">%</span>
+											‘ye varan
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/home/slide-img-1.svg" class="d-block w-100" alt="...">
+								<div
+									class="carousel-caption d-flex justify-content-between align-items-start text-dark">
+									<div>
+										<h5 class="fs-1 fw-bold">Reklam Sahəsi</h5>
+										<p class="fs-3">Kampanyalı Ürün</p>
+									</div>
+									<div>
+										<p class="align-self-end fs-2">
+											<span class="fs-144 fw-bold text-pink">20</span>
+											<span class="fs-1 fw-bold text-pink">%</span>
+											‘ye varan
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/home/slide-img-1.svg" class="d-block w-100" alt="...">
+								<div
+									class="carousel-caption d-flex justify-content-between align-items-start text-dark">
+									<div>
+										<h5 class="fs-1 fw-bold">Reklam Sahəsi</h5>
+										<p class="fs-3">Kampanyalı Ürün</p>
+									</div>
+									<div>
+										<p class="align-self-end fs-2">
+											<span class="fs-144 fw-bold text-pink">30</span>
+											<span class="fs-1 fw-bold text-pink">%</span>
+											‘ye varan
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- sağ-sol slide ikonu || açılabilir -->
+						<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button> -->
+					</div>
+
+					<div class="category mt-4">
+						<h3 class="fw-bold">Kategoriya Seçin</h3>
+						<div class="category__container d-flex">
+							<a href="#" class="category__item me-4">
+								<div style="width: 100%;" class="rounded">
+									<img class="img-fluid my-3" src="img/home/category-1.png" alt="">
+								</div>
+								<p class="fw-bold">Daşınmaz əmlak</p>
+							</a>
+							<a href="#" class="category__item me-4">
+								<div style="width: 100%;" class="rounded">
+									<img class="img-fluid my-3" src="img/home/category-2.png" alt="">
+								</div>
+								<p class="fw-bold">Nəqliyyat</p>
+							</a>
+							<a href="#" class="category__item me-4">
+								<div style="width: 100%;" class="rounded">
+									<img class="img-fluid my-3" src="img/home/category-3.png" alt="">
+								</div>
+								<p class="fw-bold">Elektronika</p>
+							</a>
+							<a href="#" class="category__item me-4">
+								<div style="width: 100%;" class="rounded">
+									<img class="img-fluid my-3" src="img/home/category-4.png" alt="">
+								</div>
+								<p class="fw-bold"> Qadın bölümü</p>
+							</a>
+							<a href="#" class="category__item me-4">
+								<div style="width: 100%;" class="rounded">
+									<img class="img-fluid my-3" src="img/home/category-5.png" alt="">
+								</div>
+								<p class="fw-bold"> Kişi bölümü</p>
+							</a>
+						</div>
+
+
+
+
+
+						<div class="row my-3 canlidestek">
+							<div class="col-md-4">
+								<div class="mb-3">
+									<img class="category-icon img-fluid me-2" src="img/home/category-icon-1.png" alt="">
+									<span class="fw-bold">Canlı Dəstək</span>
+								</div>
+								<p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="col-md-4">
+								<div class="mb-3">
+									<img class="category-icon img-fluid me-2" src="img/home/category-icon-2.png" alt="">
+									<span class="fw-bold">Etibarlı Ödəniş</span>
+								</div>
+								<p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="col-md-4">
+								<div class="mb-3">
+									<img class="category-icon img-fluid me-2" src="img/home/category-icon-3.png" alt="">
+									<span class="fw-bold">Məmnuniyyət</span>
+								</div>
+								<p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-none openClose-2 justify-content-between align-items-center text-center">
+						<a href="#" class="my-2"><img class="img-fluid" src="img/home/reklam-1-mobile.png" alt=""></a>
+						<a href="#" class="my-2"><img class="img-fluid" src="img/home/reklam-1-mobile.png" alt=""></a>
+					</div>
+
+					<div class="highlights mt-5">
+						<div class="d-flex justify-content-between">
+							<h3 class="fw-bold">Önə Çıxarılan Elanlar</h3>
+							<p class="fw-bold"><a href="#"><u>Bütün Elanlar</u></a></p>
+						</div>
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link fw-bold active" id="home-tab" data-bs-toggle="tab"
+									data-bs-target="#home" type="button" role="tab" aria-controls="home"
+									aria-selected="false">Ən Yenilər</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link fw-bold" id="profile-tab" data-bs-toggle="tab"
+									data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+									aria-selected="false">Sevimlilər</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link fw-bold" id="contact-tab" data-bs-toggle="tab"
+									data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+									aria-selected="false">Bestsellerlər</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="row mt-4 g-4">
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators1" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators1"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators1"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators1"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators2" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators2"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators2"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators2"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+										<div class="card shadow-sm border-0" style="width: 30rem;">
+
+											<div id="carouselExampleIndicators" class="carousel slide"
+												data-bs-ride="carousel">
+												<div class="carousel-indicators">
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="0" class="active" aria-current="true"
+														aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="1" aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselExampleIndicators"
+														data-bs-slide-to="2" aria-label="Slide 3"></button>
+												</div>
+												<div class="carousel-inner">
+													<div class="carousel-item active w-100">
+														<img src="img/home/card-slide-4.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-2.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="img/home/card-slide-3.png"
+															class="d-block w-100 img-fluid" alt="...">
+													</div>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<div class="d-flex justify-content-between">
+													<p class="mb-1 text-gray">Qulaqlıq</p>
+													<div style="width: 1.5rem;">
+														<img class="img-fluid" src="img/home/icon-heart.png" alt="">
+													</div>
+												</div>
+												<h6 class="card-title my-1 fw-bold">Qulaqlıq markası</h6>
+												<p class="card-text my-1">Lorem ipsum dolor</p>
+												<p class="card-text my-1 fw-bold">Lorem ipsum dolor sit amet</p>
+												<p class="mt-3">
+													<span class="text-gray me-3" style="position: relative;">
+														<small>23 AZN</small>
+														<span class="line"></span>
+													</span>
+													<span class="me-1">12 AZN</span>
+													<span class="badge rounded-pill bg-pink"
+														style="position: relative; top: -.5rem;">-%20</span>
+												</p>
+												<div class="d-flex justify-content-around">
+													<a href="#" class="btn btn-outline-blue">Digər elanlar</a>
+													<a href="#" class="btn btn-blue">Mənə yaz</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..2.
+							</div>
+							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..3.
+							</div>
+						</div>
+						<div class="row my-4">
+							<div class="col-12 text-center"><a href="#" class="btn btn-outline-blue px-5">Daha çox</a>
+							</div>
+							<!-- <div class="col-4 text-end"><button type="button" class="btn btn-pink px-5">
+									<span class="me-2" style="display: inline-block; height: 1.7rem;">
+										<img class="" src="img/home/chatbubbles.png" alt="" style="height: 100%;">
+									</span>
+									Mene Yaz
+								</button>3
+							</div> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- CHAT BAR BLOCK -->
+	<div class="chat-box">
+			<div class="client">
+				<img class="" src="img/home/chatbubbles.png" alt="" >
+				<div class="client-info">
+					<h2>Mənə yaz</h2>
+				</div>
+			</div>
+			<div class="chats">
+				<div class="client-chat">Hello</div>
+				<div class="my-chat">Hi!</div>
+				<div class="my-chat">Merhaba, Alibay' a hoş geldiniz. 😊Size nasıl yardımcı olabilirim? 💙</div>
+				<div class="client-chat">Lorem, ipsum.</div>
+				<div class="my-chat">Lorem, ipsum dolor.!</div>
+			</div>
+			<div class="chat-input">
+				<input type="text" placeholder="Enter Message">
+				<button class="send-btn">
+					<img class="img-fluid" src="img/send.png" alt="">
+				</button>
+			</div>
+	</div>
+	<div class="chat-btn">
+			<img src="img/chatcoin-chat-logo-6.png" alt="">
+	</div>
+
+	<footer class="py-5">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="footer__item col-lg-3 col-sm-6 col-6">
+					<h4 class="mb-3 fw-bold">Haqqımızda</h4>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+					<p><a href="#">Lorem Ipsum</a></p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6 col-6">
+					<h4 class="mb-3 fw-bold">Sosial Mediya</h4>
+					<p>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/instagram.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/twitter.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/facebook.png" alt=""></a>
+						<a class="me-3" href="#" style="display: inline-block; height: 1.5rem;"><img
+								style="height: 100%;" src="img/home/linkedin-in.png" alt=""></a>
+					</p>
+					<p class="fw-bold fs-5 ">Bizimlə əlaqə saxlayın</p>
+					<p>+994 050 555 55 55</p>
+					<p>+994 050 555 55 55</p>
+					<p class="my-2">info@alibay.com</p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6 col-6">
+					<h4 class="mb-3 fw-bold">Lorem Ipsum</h4>
+					<p>Lorem Ipsum</p>
+					<p>Lorem Ipsum</p>
+					<p class="me-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem sed doloribus
+						architecto cupiditate perferendis ipsa recusandae in explicabo odio officiis?</p>
+				</div>
+				<div class="footer__item col-lg-3 col-sm-6 col-6">
+					<h4 class="mb-3 fw-bold">Proqramımızı yükləyin</h4>
+					<div class="dowload">
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/app_store.png" alt="">
+						</a>
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/google-play.png" alt="">
+						</a>
+						<a href="#" class="mb-2 d-block" style="width: 12rem;">
+							<img class="img-fluid" src="img/home/huawei.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center fw-bold">Bütün hüquqlar alibay tərəfindən qorunur</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap.js"></script>
+
+	<!-- Live Chat -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$(".chat-btn").click(()=>{
+				$(".chat-box").slideToggle("slow");
+			})
+		})
+	</script>
+	
+</body>
+</html>
